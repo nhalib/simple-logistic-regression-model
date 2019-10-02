@@ -170,7 +170,7 @@ def pred(suid,bt,tgt_sector,ll,super_dict,momo=False,bt_date="2019-08-20"):
                             sizee = len(y_pred_temp)
                             for i in range(0,sizee):
                                 mfi = short_mfis_temp[i]
-                                if y_pred_temp[i] == 1 and mfi <= 50 : # close to overbought conditions
+                                if y_pred_temp[i] == 1 : # close 
                                 #if mfi <= 50:  # close to overbought conditions
 
                                     ddict = {'accuracy':accuracy,'lag':lag,'cutoff':cutoff,'short_mfi':mfi}
