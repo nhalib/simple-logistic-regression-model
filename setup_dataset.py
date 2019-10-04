@@ -121,7 +121,7 @@ def get_tis(df):
 
 def get_tis_special(df):
     df= utils.dropna(df)
-    df = money_flow_index(df['High'],df['Low'],df['Close'],df['Volume'],n=4,fillna=True)
+    df = money_flow_index(df['High'],df['Low'],df['Close'],df['Volume'],n=20,fillna=True)
     return df
 
 
